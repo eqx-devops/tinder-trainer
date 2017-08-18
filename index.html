@@ -16,6 +16,8 @@
                   <ul class="slides">
                    <li class="intro">
                       <header>
+                      <h1 class="logo">PT Match</h1>
+                      <hr>
                        <h2>Hi, Praveena</h2>
                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dicta ullam dolores, ipsa nostrum autem explicabo libero fuga consequuntur, minima blanditiis voluptatibus aliquid nulla, dolorem beatae, soluta quam eligendi. Deserunt!</p>
                    </header>
@@ -26,17 +28,15 @@
                </header>
                <div class="question">
                 <h3>Gender</h3>
-                <p class="description">Suscipit accusamus esse facere qui. Dignissimos sunt, consectetur mollitia molestias aperiam, nobis.</p>
                 <section>
                     <input id="g1" type="radio" name="gender" value="M"><label for="g1">Male</label>
-                    <input id="rad2" type="radio" name="gender" value="F"><label for="rad2">Female</label>
+                    <input id="g2" type="radio" name="gender" value="F"><label for="g2">Female</label>
 
                 </section>
 
             </div>
             <div class="question">
                 <h3>Age range</h3>
-                <p class="description">Qui voluptatem, a, expedita deserunt labore vero debitis dolorem provident cupiditate repellendus!</p>
                 <section>
                     <input type="radio" name="age" id="a1" value="18-24">
                     <label for="a1">
@@ -63,8 +63,7 @@
            </header>
            <div class="question">
             <h3>Fitness Level</h3>
-            <p class="description">Quod repudiandae labore rem blanditiis, earum in voluptatem natus.</p>
-             <section class="grid-3">
+             <section class="flush">
                     <input type="radio" name="fitness" id="f1" value="1" />
                     <label for="f1">
                         Beginner
@@ -81,9 +80,23 @@
                     </label>
                     </section>
         </div>
+
         <div class="question">
-            <h3>Your Goals</h3>
-            <p class="description">nulla adipisci dolore optio officia neque molestiae laborum cum voluptates, natus cumque ad id accusantium rerum, veniam, sapiente tempora.</p>
+            <h3>Any pre-existing condition?</h3>
+            <section>
+                    <input id="cond1" type="radio" name="condition" value="no"><label for="cond1">No</label>
+                    <input id="cond2" type="radio" name="condition" value="yes"><label for="cond2">Yes</label>
+
+                </section>
+
+
+        </div>
+    </li>
+    <li>
+    <header>    <h2>Your Goals</h2></header>
+                <div class="question">
+
+
                          <section class="flush">
                    <input type="checkbox" name="weightloss" id="goal1" value="1" />
                     <label for="goal1">
@@ -110,19 +123,7 @@
                     </label>
                     </section>
         </div>
-        <div class="question">
-            <h2>Do you have a pre-existing condition?</h2>
 
-            <label>
-                Yes
-                <input type="radio" name="condition">
-            </label>
-            <label>
-                No
-                <input type="radio" name="condition">
-            </label>
-
-        </div>
         <button>Find Matches</button>
     </li>
 <!--            <li>

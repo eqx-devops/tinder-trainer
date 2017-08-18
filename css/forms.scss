@@ -1,40 +1,53 @@
 .question {
     section {
-            input {
+        input {
             display: none;
         }
-input:checked+label{ background-color: $color-accent;
-color: white;
- }
-    label {
-        font-family: $font-title;
-        text-transform: uppercase;
-        width: (375px - 48)/2;
-        cursor: pointer;
-        padding: 30px 20px;
-        text-align: center;
-        @include transition;
-        height: 80px;
-        vertical-align: middle;
-border-left: solid 1px #ccc;
+        input:checked+label{ background-color: $color-accent;
+            color: white;
+        }
+
+        label {
+            font-family: $font-title;
+            text-transform: uppercase;
+            width: (375px - 50)/2;
+            cursor: pointer;
+            padding: 30px 20px;
+            text-align: center;
+            @include transition;
+            height: 80px;
+            vertical-align: middle;
+            border-left: solid 1px #ccc;
             border-bottom: solid 1px #ccc;
-        &:nth-of-type(2n) {
+            &:nth-of-type(2n) {
 
+                border-right: solid 1px #ccc;
+                margin-left: -4px;
+            }
+            &:hover {
+                background-color: #eee;
+            }
+            &:not(:first-of-type):not(:nth-of-type(2)) {
+                margin-top: -5px;
+            }
+            &:first-of-type, &:nth-of-type(2) {
+                border-top: solid 1px #ccc;
+            }
+
+        }
+                &.flush label {
+            width: 100%;
+            padding: 20px;
+            height: 60px;
             border-right: solid 1px #ccc;
-            margin-left: -4px;
-        }
-        &:hover {
-            background-color: #eee;
-        }
-        &:not(:first-of-type):not(:nth-of-type(2)) {
-            margin-top: -5px;
-        }
-        &:first-of-type, &:nth-of-type(2) {
-            border-top: solid 1px #ccc;
-        }
+                &:not(:first-of-type) {
 
+                margin-left: 0 !important;
+                margin-top: -5px !important;
+                border-top: none;
+            }
+        }
     }
-}
 }
 
 label {
