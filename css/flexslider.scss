@@ -132,7 +132,7 @@ html[xmlns] .flexslider .slides {
     text-decoration: none;
     display: block;
     position: absolute;
-    top: 50%;
+    top: 560px;
     z-index: 10;
     overflow: hidden;
     cursor: pointer;
@@ -152,6 +152,7 @@ html[xmlns] .flexslider .slides {
 .flexslider .flex-direction-nav {
   .flex-prev {
     left: 24px;
+    padding-top: 10px;
   }
   .flex-next {
     right: 24px;
