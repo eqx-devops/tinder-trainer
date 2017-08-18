@@ -31,10 +31,13 @@ h1, h2, h3, h4, .btn, button {
     padding: 10px 20px;
     background-color: $color-accent;
     border: none;
+    @include radius(normal, 0);
     font-weight: regular !important;
     @include transition;
+    text-transform: uppercase;
     &:hover {
         background-color: darken($color-accent, 10%);
+        color: white;
     }
 }
 label {
@@ -46,4 +49,22 @@ header.status {
     height: 20px;
     background-size: 375px 20px;
     position: fixed;
+}
+
+
+li.intro {
+    background-image: url("../images/intro.png");
+    color: white;
+    height: 600px;
+    background-size: cover;
+}
+.flexslider {
+    header {
+        padding: 24px;
+        padding-bottom: 0;
+    }
+    .question {
+        padding: 24px;
+        padding-top: 0;
+    }
 }
