@@ -5,6 +5,8 @@ $('.flexslider').flexslider({
     directionNav: true,
     slideToStart: 0,
     slideshowSpeed: 1000,
+        prevText: "Back",           //String: Set the text for the "previous" directionNav item
+    nextText: "Next",
     start: function(slider) {
         $('a.slide_thumb').click(function() {
             $('.flexslider').show();

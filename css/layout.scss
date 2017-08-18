@@ -8,7 +8,6 @@ $font-text: Graphik-Regular-Web;
 body {
   background-color: #ccc;
   font-family: $font-text;
-
 }
 
 .iphone {
@@ -22,21 +21,21 @@ body {
 .content {
     height: 647px;
     margin-top: 20px;
-    padding: 24px !important;
 }
 h1, h2, h3, h4, .btn, button {
     font-family: $font-title;
+    margin-top: 0;
 }
 .btn, button {
-color: white;
-padding: 10px 20px;
-background-color: $color-accent;
-border: none;
-font-weight: regular !important;
-@include transition;
-&:hover {
-    background-color: darken($color-accent, 10%);
-}
+    color: white;
+    padding: 10px 20px;
+    background-color: $color-accent;
+    border: none;
+    font-weight: regular !important;
+    @include transition;
+    &:hover {
+        background-color: darken($color-accent, 10%);
+    }
 }
 label {
     font-weight: regular !important;
