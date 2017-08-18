@@ -12,3 +12,16 @@ body {
   margin: 20px auto;
   overflow: auto;
 }
+.content {
+    height: 647px;
+    margin-top: 20px;
+    padding: 24px;
+}
+
+header.status {
+    background-image: url("../images/status.png");
+    width: 375px;
+    height: 20px;
+    background-size: 375px 20px;
+    position: fixed;
+}
