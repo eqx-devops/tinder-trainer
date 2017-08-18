@@ -1,7 +1,14 @@
 @include font-face(fontawesome-webfont);
+@include font-face(Graphik-Semibold-Web);
+@include font-face(Graphik-Regular-Web);
+
+$font-title: Graphik-Semibold-Web;
+$font-text: Graphik-Regular-Web;
 
 body {
   background-color: #ccc;
+  font-family: $font-text;
+
 }
 
 .iphone {
@@ -17,7 +24,9 @@ body {
     margin-top: 20px;
     padding: 24px;
 }
-
+label {
+    font-weight: regular !important;
+}
 header.status {
     background-image: url("../images/status.png");
     width: 375px;
