@@ -1,0 +1,14 @@
+@include font-face(fontawesome-webfont);
+
+body {
+  background-color: #ccc;
+}
+
+.iphone {
+  background-color: #FFF;
+  width: 375px;
+  display: block;
+  height: 667px;
+  margin: 20px auto;
+  overflow: auto;
+}
