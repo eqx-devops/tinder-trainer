@@ -1,0 +1,42 @@
+.question {
+    section {
+            input {
+            display: none;
+        }
+input:checked+label{ background-color: $color-accent;
+color: white;
+ }
+    label {
+        font-family: $font-title;
+        text-transform: uppercase;
+        width: (375px - 57)/2;
+        cursor: pointer;
+        padding: 30px 20px;
+        text-align: center;
+        @include transition;
+        height: 80px;
+        vertical-align: middle;
+border-left: solid 1px #ccc;
+            border-bottom: solid 1px #ccc;
+        &:nth-of-type(2n) {
+
+            border-right: solid 1px #ccc;
+            margin-left: -4px;
+        }
+        &:hover {
+            background-color: #eee;
+        }
+        &:not(:first-of-type):not(:nth-of-type(2)) {
+            margin-top: -5px;
+        }
+        &:first-of-type, &:nth-of-type(2) {
+            border-top: solid 1px #ccc;
+        }
+
+    }
+}
+}
+
+label {
+    font-weight: normal;
+}
