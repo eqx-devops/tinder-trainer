@@ -49,6 +49,13 @@ header.status {
     position: fixed;
 }
 
+.line {
+    height: 2px;
+    width: 50px;
+    margin: 30px 0;
+    text-align: left;
+    background-color: #FFF;
+}
 
 li.intro {
     background-image: url("../images/intro.png");
@@ -61,6 +68,7 @@ li.intro {
     h1.logo {
         font-family: #font-title;
         text-transform: uppercase;
+        padding-top: 50px;
     }
 }
 .flexslider {
